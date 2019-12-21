@@ -1,0 +1,53 @@
+:root {
+  --key-padding: 8px;
+  --key-margin: 16px;
+  --key-width: 50px;
+  --key-border-color: #474f58;
+  --key-border: 2px solid var(--key-border-color);
+  --key-text-color: antiquewhite;
+  --key-background-color: rgb(1, 0, 1, 0.3);
+  --sound-text-color: #b1f1f3;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+.keys {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.key {
+  color: var(--key-text-color);
+  width: var(--key-width);
+  padding: var(--key-padding);
+  margin: var(--key-margin);
+  border: var(--key-border);
+  border-radius: 0.7em;
+  background-color: var(--key-background-color);
+  transition: all 0.2s;
+}
+
+.sound {
+  color: var(--sound-text-color);
+}
+
+kbd {
+  display: block;
+  font-size: 2em;
+}
+
+.credits {
+  float: right;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: var(--key-text-color);
+  box-shadow: 0 0 10px #fffccc;
+}
